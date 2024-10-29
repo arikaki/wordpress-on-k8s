@@ -7,13 +7,13 @@
 	"settings": {
 		"terminal.integrated.env.osx": {
 			"KUBE_EDITOR": "nano", 
-            "KUBECONFIG": "${workspaceFolder}/.kube/kubeconfig.yaml"
+            "KUBECONFIG": "~.kube/config"
         },
         "terminal.integrated.env.windows": {
             "KUBECONFIG": "${workspaceFolder}\\.kube\\kubeconfig.yaml"
         },
         "terminal.integrated.env.linux": {
-            "KUBECONFIG": "${workspaceFolder}/.kube/kubeconfig.yaml"
+            "KUBECONFIG": "~.kube/config"
         },
 	}
 }

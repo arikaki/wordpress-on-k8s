@@ -5,6 +5,7 @@ metadata:
   name: mysql-ss
   namespace: default
 spec:
+  serviceName: "mysql-headless"
   replicas: 1
   selector:
     matchLabels:
@@ -50,7 +51,7 @@ spec:
           name: mysql-db-vol
         spec:
           accessModes: [ "ReadWriteOnce" ]
-          storageClassName: "linode-block-storage"
+          storageClassName: "standard"
           resources:
             requests:
               storage: 10Gi

@@ -3,15 +3,12 @@ kind: Service
 metadata:
   name: mysql-db
   namespace: default
-
-# mysql-db.default.svc.cluster.local
 spec:
-  type: ClusterIP
-  # type: NodePort
-  # type: LoadBalancer
+  type: NodePort
   selector:
     app: mysql-app
   ports: 
     - protocol: TCP
       port: 3306
-      targetPort: mysql-port
+      targetPort: 3306
+      nodePort: 30036
