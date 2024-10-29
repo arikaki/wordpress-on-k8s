@@ -12,8 +12,6 @@ spec:
       app: mysql-app
   template:
     metadata:
-      name: mysql-pod
-      namespace: default
       labels:
         app: mysql-app
     spec:
